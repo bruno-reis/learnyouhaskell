@@ -1,3 +1,4 @@
 # learnyouhaskell
-Repo for the Learn you a haskell book
-learnyouahaskell.com/
+Repo for the Learn you a Haskell book:
+
+http://www.learnyouahaskell.com/
