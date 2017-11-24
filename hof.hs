@@ -52,3 +52,9 @@ numLongChains' = length (filter (\xs -> length xs > 15) (map chain [1..100]))
 
 flip''' :: (a -> b -> c) -> b -> a -> c
 flip''' f = \x y -> f y x
+
+--sum (filter (> 10) (map (*2) [2.10]))
+--sum $ filter (> 10) $ map (*2) [2..10]
+
+--map (\x -> negate (abs x)) [5, -3, -6 7 -3]
+--map (negate . abs) [5, -3, -6 7 -3]
