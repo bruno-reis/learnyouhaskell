@@ -10,3 +10,7 @@ numUniques = length . nub
 sumPoly :: (Integral a) => [[a]] -> [a]
 sumPoly xss = map sum $ transpose xss
 
+search :: (Eq a) => [a] -> [a] -> Bool
+search needle haystack =
+  let nlen = length needle
+  in foldl (\acc x -> if take nlen x == needle then True  else acc) False (tails haystack)
